@@ -64,14 +64,13 @@ body {
     color:#2c5b8f;
     justify-content: center;
     display: flex;
-
 }
 
 .project-box img {
     display: block;
     border-radius: 5px;
-    height: auto;
-    width: auto;
+    height: 200px;
+    width: 500px;
 }
 
 #footer {

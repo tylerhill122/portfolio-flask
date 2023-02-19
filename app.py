@@ -9,7 +9,8 @@ def index():
 
 @app.route("/projects")
 def projects():
-    return render_template("projects.html")
+    projects = data.projects
+    return render_template("projects.html", data=data, projects=projects)
 
 @app.route("/project/<val>")
 def project(val):

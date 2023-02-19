@@ -36,46 +36,18 @@
   <div class="row">
     <div class="col-md-12" id="main-box">
       <h3>Projects</h3>
+      <div class="col-md-3"></div>
       <div class="col-md-6" style="padding-left: 0px;  padding-right: 0px;">
+        {% for project in projects %}
         <div class="project-box shade">
-          <a href="python-api.html">
-            <div><img src="static/projects/thumbnails/APIWeather.png" class="img-thumbnail"></div>
-            <h4>Python API Weather Analysis</h4>
+          <a href="project/{{project}}">
+            <h4>{{data.get(project).name}}</h4>
+            <div><img src="{{data.get(project).image}}" class="img-thumbnail"></div>
           </a>
         </div>
-        <div class="project-box shade">
-          <a href="leaflet.html">
-            <div><img src="static/projects/thumbnails/leaflet.png" class="img-thumbnail"></div>
-            <h4>Leaflet USGS Map of Geological Activity</h4>
-          </a>
-        </div>
-        <div class="project-box shade">
-          <a href="mars.html">
-            <div><img src="static/projects/thumbnails/mars.png" class="img-thumbnail"></div>
-            <h4>Mars Web-Scraping App</h4>
-          </a>
-        </div>
+        {% endfor %}
       </div>
-      <div class="col-md-6" style="padding-left: 0px;  padding-right: 0px;">
-        <div class="project-box shade">
-          <a href="/project/movie_ratings_dashboard">
-            <div><img src="static/projects/thumbnails/bbBiodiversity.png" class="img-thumbnail"></div>
-            <h4>Bellybutton Biodiversity Dashboard</h4>
-          </a>
-        </div>
-        <div class="project-box shade">
-          <a href="movie-dashboard.html">
-            <div><img src="static/projects/thumbnails/movieRatingsDB2.png" class="img-thumbnail"></div>
-            <h4>Movie Ratings Dashboard</h4>
-          </a>
-        </div>
-        <div class="project-box shade">
-          <a href="movie-dashboard.html">
-            <div><img src="static/projects/thumbnails/movieRatingsDB2.png" class="img-thumbnail"></div>
-            <h4>Movie Ratings Dashboard</h4>
-          </a>
-        </div>
-      </div>
+      <div class="col-md-3"></div>
     </div>
   </div>
 </div>
