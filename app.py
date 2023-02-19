@@ -14,7 +14,8 @@ def projects():
 @app.route("/project/<val>")
 def project(val):
     proj = data.get(val)
-    return render_template("project.html", proj=proj)
+    skills = proj['skills']
+    return render_template("project.html", proj=proj, skills=skills)
 
 if __name__ == "__main__":
     app.run(debug=True)

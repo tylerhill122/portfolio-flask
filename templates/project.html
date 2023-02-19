@@ -52,9 +52,11 @@
     <div class="col-md-4">
       <div class="sidebar top"><h4>Skills:</h4></div>
       <div class="sidebar">
-        <ul>
-          <li>{{proj.skills}}</li>
-        </ul>
+      <ul>
+        {% for skill in skills %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
       </div>
     </div>
     <div class="col-md-8" id="main-box">
