@@ -30,10 +30,43 @@ bellybutton = {
     'image': 'static/projects/thumbnails/bbBiodiversity.png'
 }
 
+mars = {
+    'name': 'Mars Web Scraping App',
+    'skills': [
+        'HTML / CSS / Bootstrap',
+        'Python / Flask / Pandas',
+        'Javascript',
+        'API Requests',
+        'Data Parsing (local JSON)',
+        'Web Scraping using Splinter, BeautifulSoup'
+    ],
+    'github': 'https://github.com/tylerhill122/web-scraping-challenge',
+    'app_link': 'https://daily-mars-scraper.herokuapp.com/',
+    'description': '<p>This Python-Flask app was created to demonstrate web-scraping ability by creating a web-scraping Python script to scrape information from multiple Mars-related websites. The python script employs BeautifulSoup and Splinter to visit the websites and automatically collect and display relevant information, as well as collecting images to display within the app. The information is then placed into a MongoDB database which is accessed in order to display the results. The app can be modified to run daily, checking for latest news and placing the results into a database to track the results over time. The scraping functionality has been removed from the app due to lack of resources necessary for full functionality.</p><p>The follwing websites are used in the collecting of this information:</p><ul><li><a href="https://redplanetscience.com">redplanetscience.com</a></li><li><a href="https://spaceimages-mars.com">spaceimages-mars.com</a></li><li><a href="https://galaxyfacts-mars.com">galaxyfacts-mars.com</a></li><li><a href="https://marshemispheres.com">marshemispheres.com</a></li></ul>',
+    'image': 'static/projects/thumbnails/mars.png'
+}
+
+leaflet = {
+    'name': 'USGS Earthquake Data with Leaflet',
+    'skills': [
+        'HTML / CSS / Bootstrap',
+        'Data Retrieval (USGS Earthquake API)',
+        'Javascript',
+        'Leaflet.js',
+        'D3.js',
+    ],
+    'github': 'https://github.com/tylerhill122/leaflet-usgs',
+    'app_link': 'https://tylerhill122.github.io/leaflet-usgs/',
+    'description': '<p>The United States Geological Survey, or USGS for short, is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment, and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes.</p>',
+    'image': 'static/projects/thumbnails/leaflet.png'
+}
+
 projects = {
     'movie_ratings_dashboard': movie_ratings_dashboard,
     'python_api': python_api,
     'bellybutton': bellybutton,
+    'mars': mars,
+    'leaftlet': leaflet
 }
 
 def get(project):
