@@ -15,12 +15,11 @@ def index():
 
 @app.route("/projects")
 def projects():
-    projects = data.projects
-    return render_template("projects.html", data=data, projects=projects)
+    return render_template("projects.html", projects=Projects.find())
 
 @app.route("/project/<val>")
 def project(val):
-    proj = data.get(val)
+    proj = Projects.find_one({"name":val},{"_id":0})
     skills = proj['skills']
     return render_template("project.html", proj=proj, skills=skills)
 

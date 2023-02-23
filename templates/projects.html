@@ -39,9 +39,9 @@
       <div class="project-container">
         {% for project in projects %}
         <div class="project-box shade">
-          <a href="project/{{project}}">
-            <h4>{{data.get(project).name}}</h4>
-            <div><img src="{{data.get(project).image}}" class="img-thumbnail"></div>
+          <a href="project/{{project.name}}">
+            <h4>{{project.name}}</h4>
+            <div><img src="{{project.image}}" class="img-thumbnail"></div>
           </a>
         </div>
         {% endfor %}
