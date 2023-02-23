@@ -1,3 +1,5 @@
+import json
+
 movie_ratings_dashboard = {
     'name': 'Movie Ratings Dashboard',
     'skills': [
@@ -83,3 +85,9 @@ projects = {
 
 def get(project):
     return projects[project]
+
+# JSON dump for entry into MongoDB
+
+for project in projects:
+    with open(f"json/{project}.json", "w") as outfile:
+        json.dump(projects[project], outfile)
