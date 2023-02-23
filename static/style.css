@@ -59,12 +59,13 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-box {
     padding:10px;
     margin:20px;
-    background: #e39480;
+    background: linear-gradient(0deg, #e39480, 10%, #b4d4d1);
     text-align: center;
     border-radius: 10px;
     color:#2c5b8f;
